@@ -446,7 +446,44 @@ nav .tb{font-size:10.5px}
 .ptsline{display:inline-flex;align-items:baseline;gap:5px;padding:5px 11px;border-radius:12px;font-family:var(--disp);font-weight:800;font-size:19px;line-height:1;color:#061018;background:linear-gradient(135deg,color-mix(in srgb,var(--rc) 80%,#fff),var(--rc));box-shadow:0 6px 18px -6px var(--rc);font-variant-numeric:tabular-nums}
 .ptsline small{font-size:10.5px;font-weight:800}
 @media(max-width:360px){.rbxsb .digits .d{min-width:25px;font-size:30px}.rbxsb .digits .p{font-size:30px}.ptsbig .pp{font-size:20px;padding:6px 9px}.rbxpts{gap:4px}.rbxpts>div{padding:7px 3px}.rbxpts .v{font-size:13.5px}.rbxpts .v small{font-size:8.5px;margin-left:1px}.rbxpts .k{font-size:8.5px;letter-spacing:.3px}}
+
+/* ===== v4: themes & look · RBX size · candles · notional tracker ===== */
+.rbxsb.dS .digits .d{min-width:24px;font-size:26px;padding:3px 0;border-radius:8px}.rbxsb.dS .digits .p{font-size:26px}
+.rbxsb.dS .ptsbig .pp{font-size:15px;padding:4px 8px}.rbxsb.dS .ptsbig .pc{font-size:11px}
+.rbxsb.dM .digits .d{min-width:27px;font-size:31px}.rbxsb.dM .digits .p{font-size:31px}.rbxsb.dM .ptsbig .pp{font-size:18px}
+.rbxsb.pS .rbxpts{gap:4px}.rbxsb.pS .rbxpts>div{padding:4px 3px;border-radius:9px;background:color-mix(in srgb,var(--c) 10%,transparent);border-color:color-mix(in srgb,var(--c) 28%,transparent)}
+.rbxsb.pS .rbxpts .k{font-size:8.5px;letter-spacing:.4px;color:var(--muted)}.rbxsb.pS .rbxpts .v{font-size:12px;color:var(--text)}.rbxsb.pS .rbxpts .v small{font-size:8px}.rbxsb.pS .rbxpts .s{font-size:9px;filter:none;opacity:.8}
+.rbxsb.pM .rbxpts>div{padding:6px 5px}.rbxsb.pM .rbxpts .v{font-size:14px}
+.rbxsb.pS .rbxspark{height:44px;margin:8px 0 6px}
+.lkp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:6px 0 4px}
+.lkp button{border-radius:13px;padding:9px 6px 7px;border:1px solid var(--line2);font-size:11.5px;font-weight:800;display:flex;flex-direction:column;align-items:center;gap:5px}
+.lkp button.on{box-shadow:0 0 0 2px var(--cyan)}
+.lkp .sw{display:flex;gap:3px}.lkp .sw i{width:13px;height:13px;border-radius:50%;display:block}
+.lrow{padding:9px 0;border-bottom:1px solid var(--line)}
+.lrow .t{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13.5px;font-weight:700}
+.lrow .c{display:grid;grid-template-columns:46px minmax(0,1fr) 40px;gap:8px;align-items:center;margin-top:7px}
+.lrow input[type=color],.lk input[type=color]{width:46px;height:32px;padding:2px;border-radius:9px}
+.lrow input[type=range],.lk input[type=range]{padding:0;border:0;background:none;accent-color:var(--cyan)}
+.lrow small{color:var(--muted);text-align:right}
+.shp{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}.shp button{font-size:11px;font-weight:800;padding:5px 9px;border-radius:8px;background:var(--s2);border:1px solid var(--line2);color:var(--muted)}.shp button.on{background:var(--grad,linear-gradient(135deg,#ff4fa3,#7c5cff));color:#fff;border-color:transparent}
+.lkprev{position:sticky;top:-16px;z-index:3;padding:8px 0 10px;background:linear-gradient(180deg,var(--s1) 88%,transparent)}
+.lkprev .row2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.cdl svg{width:100%;height:auto;display:block;overflow:visible}
+.cdl .cb{transform-box:fill-box;transform-origin:50% 100%;animation:cdlup .5s cubic-bezier(.2,.9,.3,1) both}
+@keyframes cdlup{from{transform:scaleY(0);opacity:0}}
+.cdl g[data-act]{cursor:pointer}
+.cdlinfo{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:8px}
+.cdlinfo div{background:var(--s2);border-radius:10px;padding:6px 7px;min-width:0}.cdlinfo .k{font-size:9.5px;color:var(--muted);font-weight:800;letter-spacing:.5px}.cdlinfo .v{font-family:var(--disp);font-weight:800;font-size:13.5px;font-variant-numeric:tabular-nums}
+.pchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}.pchips span{font-size:11.5px;font-weight:800;padding:5px 10px;border-radius:99px;background:color-mix(in srgb,var(--c) 18%,var(--s2));border:1px solid color-mix(in srgb,var(--c) 45%,transparent)}
+.ntl .big2{font-family:var(--disp);font-weight:800;font-size:28px;font-variant-numeric:tabular-nums;line-height:1.1}
+.ntl .chart2 svg{width:100%;height:auto;display:block;margin:10px 0 6px}
+.ntl .nk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ntl .nk>div{background:var(--s2);border-radius:12px;padding:7px 8px;min-width:0}.ntl .nk .k{font-size:9.5px;font-weight:800;letter-spacing:.5px;color:var(--muted);text-transform:uppercase}.ntl .nk .v{font-family:var(--disp);font-weight:800;font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}.ntl .nk .s{font-size:10px;color:var(--faint)}
+.ntl .nb{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:12.5px;padding:5px 0}
+.ntl .nb .tr{height:8px;border-radius:99px;background:var(--s3);position:relative;overflow:hidden}.ntl .nb .tr b{position:absolute;top:0;bottom:0;border-radius:99px;animation:growx .9s cubic-bezier(.2,.9,.3,1) both;transform-origin:left}
+@keyframes growx{from{transform:scaleX(0)}}
 </style>
+<style id="lookCss"></style><style id="btnCss"></style>
 </head>
 <body>
 <div id="lock" hidden></div>
@@ -617,7 +654,7 @@ function sheetSym(sym){
 // colours: buckets + accounts, shared look with Echo's editor
 const BK0 = Object.fromEntries(Object.entries(BK).map(([k,b]) => [k, b.c]));
 const PALETTE = ['#2ec5ff','#7c5cff','#ff4fa3','#ffb020','#1fd68a','#e8364a','#0aa6d6','#9b3fd6','#f59f00','#12a874','#3d63e0','#f0428f','#ff6a13','#8a3ffc'];
-function applyColors(){ Object.keys(BK).forEach(k => BK[k].c = (S.bkc || {})[k] || BK0[k]); }
+function applyColors(){ Object.keys(BK).forEach(k => BK[k].c = (S.bkc || {})[k] || BK0[k]); try { applyLook(); } catch(e) {} }
 function sheetColors(){
   UI.C = UI.C || {bk:Object.fromEntries(Object.keys(BK).map(k => [k, BK[k].c])), ac:Object.fromEntries(S.accts.map(a => [a.id, a.color]))};
   const row = (kind, id, name, c) => `<div class="crow"><div class="cprev" style="--c:${c}">${esc(name)}</div><input type="color" data-ck="${kind}" data-id="${id}" value="${c}"></div>
@@ -628,7 +665,7 @@ function sheetColors(){
     <div class="acts"><button class="btn" data-act="creset">Reset to default</button><button class="btn pri" data-act="csave">Save colours</button></div>`);
 }
 // app wishlist: changes Rakesh wants in MIB, kept until he sends them for an update
-const WSCR = ['Home','Holdings','Index','Ideas','Journal','Other'], WST = {todo:['To do','#2ec5ff'], sent:['Sent','#ffb020'], done:['Done','#1fd68a']};
+const WSCR = ['Home','Holdings','Index','Ideas','Journal','Look','Other'], WST = {todo:['To do','#2ec5ff'], sent:['Sent','#ffb020'], done:['Done','#1fd68a']};
 function sheetWish(){
   UI.W = UI.W || {scr:UI.tab === 'index' ? 'Index' : UI.tab === 'hold' ? 'Holdings' : UI.tab === 'ideas' ? 'Ideas' : UI.tab === 'journal' ? 'Journal' : 'Home', f:'todo'};
   const list = (S.wish || []).filter(w => w.st === UI.W.f).sort((a,b) => b.t - a.t), cnt = k => (S.wish || []).filter(w => w.st === k).length;
@@ -924,7 +961,8 @@ function rbxTile(){
   const sp = ser.slice(-40), W = 300, H = 58, mn = Math.min(...sp.map(s => s.idx)), mx = Math.max(...sp.map(s => s.idx)), rg = (mx - mn) || 1;
   const X = i => sp.length > 1 ? 4 + i*(W - 12)/(sp.length - 1) : W/2, Y = v => 6 + (1 - (v - mn)/rg)*(H - 14);
   const pts = sp.map((s, i) => `${X(i).toFixed(1)},${Y(s.idx).toFixed(1)}`), sc = sp[sp.length - 1].idx >= sp[0].idx ? '#2ee59d' : '#ff5d73', by = Y(sp[0].idx).toFixed(1);
-  return `<section class="card rbxsb" style="--rc:${rc}">
+  const LKx = look();
+  return `<section class="card rbxsb d${LKx.rbxDay || 'S'} p${LKx.rbxPer || 'S'}" style="--rc:${rc}">
     <button class="rbxh" data-act="tab" data-t="index"><span class="rbxname">${IDX_NAME}<small>YOUR OWN INDEX · BASE 100</small></span><span class="rbxgo">Index ›</span></button>
     <button class="rbxmain" data-act="tab" data-t="index" style="width:100%;text-align:left"><span>${digits(last.idx)}</span>
       <span class="ptsbig"><span class="pp"><i>${ar}</i>${sgn(dpt)}${Math.abs(dpt).toFixed(2)}<small>PTS</small></span><span class="pc">${pctS(dch)} <span>today</span></span></span></button>
@@ -978,7 +1016,7 @@ function renderIndex(){
       <div class="alph">${[['α vs Nifty 50', pr.n, '#ffc54d', 'the broad market'], ['α vs Capital Markets', pr.c, '#ff4fa3', 'your main sector']].map(([k, b, c, s]) => { const a = b != null ? pr.r - b : null;
         return `<div style="--c:${c}"><div class="k">${k}</div><div class="v ${a != null ? cls(a) : 'muted'}" style="filter:brightness(1.2)">${a != null ? `${sgn(a)}${Math.abs(a).toFixed(1)} pts` : '—'}</div><div class="s">${a == null ? 'no benchmark data for this period' : a >= 0 ? `ahead of ${s}` : `behind ${s}`}</div></div>`; }).join('')}</div>`;
   } else h += `<section class="card muted">Not enough history for this period yet. Pick a shorter one, or add past values.</section>`;
-  h += idxChart(ser, p);
+  h += idxChart(ser, p) + candleCard(ser);
   // alpha table
   const rows = IPER.map(([k,l]) => ({l, x:periodRets(ser, k)})).filter(r => r.x);
   if (rows.length) h += `<section class="card"><div class="ch"><h3>Alpha check · every period</h3><span class="small faint">α = points ahead (+) or behind (−)</span></div><div class="tblw"><table class="atab"><tr><th>Period</th><th>Pts</th><th>RBX</th><th>Nifty 50</th><th>α</th><th>Cap Mkts</th><th>α</th></tr>
@@ -1110,7 +1148,8 @@ function renderHome(){
   h += `<div class="buckets" style="margin-bottom:8px">${Object.entries(BK).map(([k,b]) => { const l = list.filter(x => x.bk === k), a = agg(l), rr = rl.filter(r => r.bk === k).reduce((s,r) => s + r.pnl, 0);
     return `<button class="bk" style="--c:${b.c}" data-act="gobk" data-v="${k}"><span class="spark"></span><div class="n">${b.l}</div><div class="v" data-count="${Math.round(a.val)}" data-fmt="rsk">${rsk(a.val)}</div>
       <div class="p">${a.n ? `<span class="${cls(a.pnl)}">${a.pnl >= 0 ? '▲' : '▼'} ${sgn(a.pnl)}${rsk(Math.abs(a.pnl))} · ${pctS(a.pp)}</span>` : '<span>—</span>'}</div><div class="s">${a.n} holding${a.n === 1 ? '' : 's'}${rr ? ` · booked <span class="${cls(rr)}">${sgn(rr)}${rsk(Math.abs(rr))}</span>` : ''}${(() => { const x = a.n ? xBk(k) : null; return x ? ` · XIRR <span class="${cls(x.r)}">${xTxt(x)}</span>` : ''; })()}</div></button>`; }).join('')}</div>
-    <div class="editc"><button data-act="colors">🎨 Edit colours ${Object.values(BK).map(b => `<i style="background:${b.c}"></i>`).join('')}</button></div>`;
+    <div class="editc" style="gap:6px"><button data-act="look">🌈 Theme & look</button><button data-act="colors">🎨 Edit colours ${Object.values(BK).map(b => `<i style="background:${b.c}"></i>`).join('')}</button></div>`;
+  h += notionalCard(list, rl);
   // accounts: rectangular tiles
   if (UI.acc === 'all' && open.length) {
     const per = S.accts.map(a => ({a, ...agg(open.filter(h => h.acct === a.id))})).filter(x => x.n), tot = per.reduce((s,x) => s + x.val, 0) || 1;
@@ -1487,7 +1526,7 @@ async function sheetSettings(){
   sheet(`<h3>Settings</h3>
     <h4>Accounts</h4>${S.accts.map(a => `<div class="f2" style="grid-template-columns:auto 1fr;align-items:center;margin-bottom:6px"><span style="width:12px;height:12px;border-radius:50%;background:${a.color};display:inline-block"></span><input data-accname="${a.id}" value="${esc(a.name)}"></div>`).join('')}
     <div class="acts"><button class="btn" data-act="saveaccts">Save names</button><button class="btn" data-act="addacct">＋ Account</button></div>
-    <h4>Look & feel</h4><div class="acts" style="margin-top:0"><button class="btn" data-act="colors">🎨 Colours</button><button class="btn" data-act="wish">📝 App wishlist${(S.wish || []).filter(w => w.st === 'todo').length ? ' · ' + S.wish.filter(w => w.st === 'todo').length : ''}</button></div>
+    <h4>Look & feel</h4><div class="acts" style="margin-top:0"><button class="btn" data-act="look">🌈 Theme & look</button><button class="btn" data-act="colors">🎨 Colours</button><button class="btn" data-act="wish">📝 App wishlist${(S.wish || []).filter(w => w.st === 'todo').length ? ' · ' + S.wish.filter(w => w.st === 'todo').length : ''}</button></div>
     <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 2px 0"><span class="muted">Sounds</span><label class="swt"><input type="checkbox" data-act="sndtog" ${S.sound !== false ? 'checked' : ''}><span></span></label></div>
     <h4>Live prices</h4><button class="btn" data-act="sheetsetup">${S.sheet ? 'Google Sheet connected · manage' : 'Connect a Google Sheet'}</button>
     <h4>Lock</h4>
@@ -1502,6 +1541,168 @@ async function sheetSettings(){
     <div class="note">Everything stays on this phone. Export a backup regularly, keep it off GitHub, and never use "Clear site data" for github.io: it would wipe all your apps.</div>
     <h4>Reset</h4><button class="btn danger" data-act="wipe">Delete all MIB data and PIN</button>`);
 }
+
+/* ===================== v4 · theme & look ===================== */
+const THEMES = {
+  aurora: {n:'Aurora Pulse',  v:['#07081a','#10122b','#171a3a','#22264f','#262b58','#353b72','#f1f2ff','#a3a8d6','#646a9e','#2ec5ff','#7c5cff','#ff4fa3']},
+  titan:  {n:'Titan Forge',   v:['#0d0b09','#1a1612','#241e18','#30271f','#3a3026','#4d3f31','#f2e8dc','#b3a28e','#6e604f','#ffc24a','#ff6a1a','#d6452b']},
+  emerald:{n:'Emerald',       v:['#06110d','#0d1f18','#132a21','#1a372b','#1f4436','#2a5a47','#e3f7ee','#93bfa9','#55806b','#7cf2c0','#12b878','#c8f05a']},
+  ice:    {n:'Ice Steel',     v:['#080d12','#111a23','#18232f','#1f2d3c','#2a3a4c','#384c62','#e6f1fb','#9ab0c5','#5d7488','#bfe6ff','#4aa3e8','#8a9bb0']},
+  blood:  {n:'Blood Moon',    v:['#120607','#220c0f','#2e1115','#3b161b','#4d1c22','#66262e','#fbe7e8','#c79a9e','#7f5559','#ff8a5c','#c8102e','#ff2f6d']},
+  gold:   {n:'Midnight Gold', v:['#07070c','#121219','#1a1a24','#23232f','#2e2c3d','#3d3a50','#f5efe0','#b5ab92','#6f6852','#f3dc8f','#c9a227','#8f6bd8']},
+};
+const LBTNS = [['pri','Main buttons (Save, Back up…)','.btn.pri'],['btn','Other buttons','.btn:not(.pri)'],['chip','Selected chips & filters','.fc.on, .chip.on, .vt button.on, .seg button.on, .stg button.on'],
+  ['fab','＋ Add button','.fab'],['icon','Top icons','header .icon-btn, .icon-btn'],['edit','Small pill buttons (Edit colours…)','.editc button, .rbxgo']];
+const LSHAPES = [['','Default'],['round','Rounded'],['pill','Pill'],['square','Square'],['sharp','Sharp'],['leaf','Leaf']];
+const LSHR = {round:'14px', pill:'999px', square:'6px', sharp:'0', leaf:'20px 4px 20px 4px'};
+const look = () => { if (!S.look) S.look = {theme:'aurora', tile:'', tp:100, bkTp:100, btn:{}, rbxDay:'S', rbxPer:'S'}; S.look.btn = S.look.btn || {}; return S.look; };
+function applyLook(){
+  const L = look(), t = THEMES[L.theme] || THEMES.aurora, [bg, s1, s2, s3, ln, ln2, tx, mu, fa, cy, vi, pk] = t.v, r = document.documentElement.style;
+  Object.entries({'--bg':bg,'--s1':s1,'--s2':s2,'--s3':s3,'--line':ln,'--line2':ln2,'--text':tx,'--muted':mu,'--faint':fa,'--cyan':cy,'--vio':vi,'--pink':pk,'--grad':`linear-gradient(135deg,${pk},${vi} 50%,${cy})`}).forEach(([k, v]) => r.setProperty(k, v));
+  const m = document.querySelector('meta[name=theme-color]'); if (m) m.content = bg;
+  let c = '';
+  if (L.tile || L.tp < 100) c += `.card{background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015)),color-mix(in srgb,${L.tile || 'var(--s1)'} ${L.tp}%,transparent)!important}`;
+  if (L.bkTp < 100) c += `.bk,.atl{background:linear-gradient(150deg,color-mix(in srgb,var(--c) ${L.bkTp}%,transparent),color-mix(in srgb,color-mix(in srgb,var(--c) 55%,#0b0c22) ${L.bkTp}%,transparent))!important}`;
+  const lc = document.getElementById('lookCss'); if (lc) lc.textContent = c;
+  let b = '';
+  LBTNS.forEach(([k, , sel]) => { const o = L.btn[k]; if (!o) return; const a = o.a ?? 100, p = [];
+    if (o.c) { p.push(`background:color-mix(in srgb,${o.c} ${a}%,transparent)!important`, `border-color:color-mix(in srgb,${o.c} 60%,transparent)!important`); }
+    else if (a < 100) p.push(`background:color-mix(in srgb,var(--s2) ${a}%,transparent)!important`);
+    if (o.s && LSHR[o.s] && k !== 'fab') p.push(`border-radius:${LSHR[o.s]}!important`);
+    if (p.length) b += `${sel}{${p.join(';')}}`;
+    if (o.c && a >= 50) { const h = o.c.slice(1), [R, G, B] = [0, 2, 4].map(i => parseInt(h.substr(i, 2), 16)/255); if (.2126*R + .7152*G + .0722*B > .55) b += sel.split(',').map(x => `${x.trim()},${x.trim()} *`).join(',') + '{color:#0b0d16!important}'; } });
+  const bc = document.getElementById('btnCss'); if (bc) bc.textContent = b;
+}
+function sheetLook(){
+  const L = look(), sz = (k, cur) => `<div class="f3" style="margin-top:6px">${[['S','Small'],['M','Medium'],['L','Large']].map(([v, l]) => `<button class="chip${cur === v ? ' on' : ''}" style="justify-content:center" data-act="lkrbx" data-k="${k}" data-v="${v}">${l}</button>`).join('')}</div>`;
+  const brow = ([k, name]) => { const o = L.btn[k] || {}; return `<div class="lrow"><div class="t"><span>${name}</span><button class="btn sm" data-act="lkbr" data-k="${k}" style="width:auto;padding:5px 10px;font-size:11px">Reset</button></div>
+    <div class="c"><input type="color" data-lk="bc:${k}" value="${o.c || '#7c5cff'}"><input type="range" min="10" max="100" step="5" data-lk="ba:${k}" value="${o.a ?? 100}"><small>${o.a ?? 100}%</small></div>
+    ${k === 'fab' ? '' : `<div class="shp">${LSHAPES.map(([v, l]) => `<button class="${(o.s || '') === v ? 'on' : ''}" data-act="lkshape" data-k="${k}" data-v="${v}">${l}</button>`).join('')}</div>`}</div>`; };
+  sheet(`<div class="lk"><h3>🌈 Theme & look</h3>
+    <div class="lkprev"><div class="small muted" style="margin-bottom:6px">LIVE DEMO · changes show as you tap</div>
+      <div class="buckets" style="margin:0;grid-template-columns:1fr 1fr">${Object.entries(BK).slice(0, 2).map(([k, b]) => `<div class="bk" style="--c:${b.c}"><div class="n">${b.l}</div><div class="v">₹4.2L</div><div class="p"><span class="up">▲ +₹38k · 9.9%</span></div></div>`).join('')}</div>
+      <div class="card" style="margin:8px 0 0;padding:10px 12px"><div style="display:flex;justify-content:space-between"><span class="small muted">Card</span><b class="up">+₹1.2L</b></div></div>
+      <div class="row2"><button class="btn pri" style="pointer-events:none">Main button</button><button class="btn" style="pointer-events:none">Other button</button></div></div>
+    <h4>Theme</h4><div class="lkp">${Object.entries(THEMES).map(([k, t]) => `<button class="${L.theme === k ? 'on' : ''}" style="background:${t.v[1]};color:${t.v[6]}" data-act="lkth" data-v="${k}"><span class="sw">${[t.v[9], t.v[10], t.v[11]].map(c => `<i style="background:${c}"></i>`).join('')}</span>${t.n}</button>`).join('')}</div>
+    <h4>Tiles</h4>
+    <div class="lrow"><div class="t"><span>Card colour</span><span style="display:flex;gap:8px;align-items:center"><input type="color" data-lk="tile" value="${L.tile || (THEMES[L.theme] || THEMES.aurora).v[1]}"><button class="btn sm" data-act="lktile0" style="width:auto;padding:5px 10px;font-size:11px">Theme</button></span></div></div>
+    <div class="lrow"><div class="t"><span>Card see-through</span></div><div class="c" style="grid-template-columns:minmax(0,1fr) 40px"><input type="range" min="20" max="100" step="5" data-lk="tp" value="${L.tp}"><small>${L.tp}%</small></div></div>
+    <div class="lrow"><div class="t"><span>Bucket & account tiles see-through</span></div><div class="c" style="grid-template-columns:minmax(0,1fr) 40px"><input type="range" min="20" max="100" step="5" data-lk="bkTp" value="${L.bkTp}"><small>${L.bkTp}%</small></div></div>
+    <div class="note">Bucket colours themselves: Home → 🎨 Edit colours.</div>
+    <h4>${IDX_NAME} tile on Home</h4>
+    <div class="small muted">Today's points (big ▲/▼ number)</div>${sz('rbxDay', L.rbxDay || 'S')}
+    <div class="small muted" style="margin-top:10px">1 week · 1 month · 1 year · From high tiles</div>${sz('rbxPer', L.rbxPer || 'S')}
+    <h4>Buttons · colour, see-through, shape</h4>
+    <div class="small muted">Shape for all buttons</div><div class="shp">${LSHAPES.map(([v, l]) => `<button data-act="lkall" data-v="${v}">${l}</button>`).join('')}</div>
+    ${LBTNS.map(brow).join('')}
+    <div class="acts"><button class="btn danger" data-act="lkreset">Reset all looks</button><button class="btn pri" data-act="close">Done</button></div>
+    <div class="note">100% = solid, lower = more see-through.</div></div>`);
+}
+function lookInput(el){
+  const L = look(), k = el.dataset.lk, v = el.value, lab = el.nextElementSibling && el.nextElementSibling.tagName === 'SMALL' ? el.nextElementSibling : null;
+  if (k === 'tile') L.tile = v; else if (k === 'tp' || k === 'bkTp') L[k] = +v;
+  else { const [t, id] = k.split(':'); L.btn[id] = L.btn[id] || {}; if (t === 'bc') L.btn[id].c = v; else L.btn[id].a = +v; }
+  if (lab) lab.textContent = v + '%';
+  save(); applyLook();
+}
+
+/* ===================== v4 · notional profit tracker ===================== */
+function notionalCard(list, rl){
+  const A = agg(list); if (!A.n) return '';
+  const all = series(UI.acc).filter(x => x.i != null).map(x => ({k:x.k, n:x.v - x.i, i:x.i}));
+  const p = UI.ntlp || '3M', from = p === 'ALL' ? '0000' : periodStart(p), pts = all.filter(x => x.k >= from);
+  const now = A.pnl, prev = all.length > 1 ? all[all.length - (all[all.length - 1].k === today() ? 2 : 1)] : null, dChg = prev ? now - prev.n : null;
+  const ath = all.reduce((m, x) => !m || x.n > m.n ? x : m, null), low = pts.reduce((m, x) => !m || x.n < m.n ? x : m, null), hiP = pts.reduce((m, x) => !m || x.n > m.n ? x : m, null);
+  const fall = ath ? now - Math.max(ath.n, now) : 0, booked = rl.reduce((s, r) => s + r.pnl, 0), startP = pts.length ? pts[0].n : null;
+  const per = Object.entries(BK).map(([k, b]) => ({k, b, a:agg(list.filter(x => x.bk === k))})).filter(x => x.a.n), mx = Math.max(1, ...per.map(x => Math.abs(x.a.pnl)));
+  let chart = '';
+  if (pts.length > 1) {
+    const W = 340, H = 120, vs = pts.map(x => x.n).concat(0, now), mn = Math.min(...vs), mxv = Math.max(...vs), rg = (mxv - mn) || 1;
+    const X = i => i/(pts.length - 1)*W, Y = v => 6 + (1 - (v - mn)/rg)*(H - 12), z = Y(0).toFixed(1);
+    const line = pts.map((x, i) => `${i ? 'L' : 'M'}${X(i).toFixed(1)},${Y(x.n).toFixed(1)}`).join(' ');
+    chart = `<div class="chart2"><svg viewBox="0 0 ${W} ${H + 14}"><defs>
+      <clipPath id="nUp"><rect x="0" y="0" width="${W}" height="${z}"/></clipPath><clipPath id="nDn"><rect x="0" y="${z}" width="${W}" height="${H}"/></clipPath>
+      <linearGradient id="nGu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2ee59d" stop-opacity=".5"/><stop offset="1" stop-color="#2ee59d" stop-opacity=".02"/></linearGradient>
+      <linearGradient id="nGd" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff5d73" stop-opacity=".5"/><stop offset="1" stop-color="#ff5d73" stop-opacity=".02"/></linearGradient></defs>
+      <path d="${line} L${W},${z} L0,${z}Z" fill="url(#nGu)" clip-path="url(#nUp)"/><path d="${line} L${W},${z} L0,${z}Z" fill="url(#nGd)" clip-path="url(#nDn)"/>
+      <line x1="0" x2="${W}" y1="${z}" y2="${z}" stroke="var(--faint)" stroke-dasharray="3 4"/><text x="2" y="${(+z - 3).toFixed(1)}" font-size="9" fill="var(--faint)">₹0</text>
+      <path d="${line}" fill="none" stroke="${now >= 0 ? '#2ee59d' : '#ff5d73'}" stroke-width="2.2" stroke-linejoin="round" class="ln" style="stroke-dasharray:2000;stroke-dashoffset:2000;animation:drawsp 1.3s .1s cubic-bezier(.2,.8,.2,1) forwards"/>
+      ${hiP ? `<circle cx="${X(pts.indexOf(hiP)).toFixed(1)}" cy="${Y(hiP.n).toFixed(1)}" r="3.5" fill="#ffc54d"/>` : ''}
+      <circle cx="${W}" cy="${Y(pts[pts.length - 1].n).toFixed(1)}" r="4" fill="#fff" stroke="${now >= 0 ? '#2ee59d' : '#ff5d73'}" stroke-width="2"/>
+      <text x="0" y="${H + 12}" font-size="9.5" fill="var(--muted)">${short(pts[0].k)}</text><text x="${W}" y="${H + 12}" text-anchor="end" font-size="9.5" fill="var(--muted)">${short(pts[pts.length - 1].k)}</text></svg></div>`;
+  }
+  return `<section class="card ntl"><div class="ch"><h3>📈 Notional profit tracker</h3><span class="small faint">unrealised · not booked yet</span></div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:10px"><div><div class="big2 ${cls(now)}">${sgn(now)}${rs(Math.abs(now))}</div><div class="small muted">${pctS(A.pp)} on ${rsk(A.inv)} invested</div></div>
+      ${dChg != null ? `<div style="text-align:right"><div class="small muted">vs ${short(prev.k)}</div><div class="${cls(dChg)}" style="font-weight:800">${dChg >= 0 ? '▲' : '▼'} ${sgn(dChg)}${rsk(Math.abs(dChg))}</div></div>` : ''}</div>
+    <div class="fl" style="margin-top:10px">${[['1M','1M'],['3M','3M'],['1Y','1Y'],['ALL','All']].map(([k, l]) => `<button class="fc${p === k ? ' on' : ''}" style="--c:#2ee59d" data-act="ntlp" data-v="${k}">${l}</button>`).join('')}</div>
+    ${chart || '<div class="note">The trend line appears after a few saved days.</div>'}
+    <div class="nk"><div><div class="k">Peak notional</div><div class="v up">${ath ? rsk(Math.max(ath.n, now)) : '—'}</div><div class="s">${ath ? (now >= ath.n ? 'today' : short(ath.k)) : ''}</div></div>
+      <div><div class="k">From peak</div><div class="v ${fall < -1 ? 'dn' : 'up'}">${fall < -1 ? '−' + rsk(Math.abs(fall)) : 'At peak'}</div><div class="s">${fall < -1 && ath.n > 0 ? Math.round(fall/ath.n*100) + '% given back' : 'all-time'}</div></div>
+      <div><div class="k">${p === 'ALL' ? 'Since start' : p + ' change'}</div><div class="v ${startP != null ? cls(now - startP) : ''}">${startP != null ? sgn(now - startP) + rsk(Math.abs(now - startP)) : '—'}</div><div class="s">${low ? 'low ' + rsk(low.n) : ''}</div></div></div>
+    <div class="small muted" style="margin:12px 0 4px;font-weight:800;letter-spacing:.5px">NOTIONAL BY BUCKET</div>
+    ${per.map(x => `<div class="nb"><span style="color:${x.b.c};font-weight:800">${x.b.l}</span><span class="tr"><b style="left:0;width:${(Math.abs(x.a.pnl)/mx*100).toFixed(1)}%;background:${x.a.pnl >= 0 ? '#2ee59d' : '#ff5d73'}"></b></span><span class="num ${cls(x.a.pnl)}" style="font-weight:800">${sgn(x.a.pnl)}${rsk(Math.abs(x.a.pnl))}</span></div>`).join('')}
+    <div class="note">Booked so far <b class="${cls(booked)}">${sgn(booked)}${rsk(Math.abs(booked))}</b> + notional <b class="${cls(now)}">${sgn(now)}${rsk(Math.abs(now))}</b> = <b class="${cls(booked + now)}">${sgn(booked + now)}${rsk(Math.abs(booked + now))}</b> total. Notional profit is only on paper until you sell.</div></section>`;
+}
+
+/* ===================== v4 · RBX 100 candlesticks ===================== */
+function candles(ser, tf){
+  if (ser.length < 2) return [];
+  if (tf === 'D') return ser.slice(1).map((s, i) => { const o = ser[i].idx, c = s.idx; return {k:s.k, k2:s.k, o, c, h:Math.max(o, c), l:Math.min(o, c)}; });
+  const key = k => { if (tf === 'M') return k.slice(0, 7); const d = new Date(k + 'T00:00:00'); d.setDate(d.getDate() - (d.getDay() + 6) % 7); return iso(d); };
+  const out = []; let cur = null, prevC = ser[0].idx;
+  ser.forEach((s, i) => { const g = key(s.k);
+    if (!cur || cur.g !== g) { if (cur) { prevC = cur.c; out.push(cur); } const o = i ? prevC : s.idx; cur = {g, k:s.k, k2:s.k, o, c:s.idx, h:Math.max(o, s.idx), l:Math.min(o, s.idx)}; }
+    else { cur.c = s.idx; cur.k2 = s.k; cur.h = Math.max(cur.h, s.idx); cur.l = Math.min(cur.l, s.idx); } });
+  if (cur) out.push(cur); return out;
+}
+function cdlPatterns(cs, tf){
+  const out = [], n = cs.length; if (n < 2) return out;
+  const c = cs[n - 1], p = cs[n - 2], body = x => Math.abs(x.c - x.o), up = x => x.c > x.o, dn = x => x.c < x.o, rng = x => (x.h - x.l) || 1e-9;
+  const avgB = cs.slice(-11, -1).reduce((s, x) => s + body(x), 0) / Math.max(1, Math.min(10, n - 1));
+  if (dn(p) && up(c) && c.c >= p.o && c.o <= p.c) out.push(['Bullish engulfing', '#2ee59d', 'this candle wiped out all of the previous fall']);
+  if (up(p) && dn(c) && c.c <= p.o && c.o >= p.c) out.push(['Bearish engulfing', '#ff5d73', 'this candle wiped out all of the previous rise']);
+  if (tf !== 'D') {
+    const lw = Math.min(c.o, c.c) - c.l, uw = c.h - Math.max(c.o, c.c);
+    if (body(c) <= rng(c) * .12 && rng(c) > 0) out.push(['Doji', '#ffc54d', 'opened and closed at nearly the same level']);
+    else if (lw >= body(c) * 2 && uw <= body(c) * .6) out.push(['Hammer', '#2ee59d', 'dipped hard, then recovered most of it']);
+    else if (uw >= body(c) * 2 && lw <= body(c) * .6) out.push(['Shooting star', '#ff5d73', 'rose high, then gave most of it back']);
+  } else if (Math.abs(c.c/c.o - 1) < .001) out.push(['Flat day', '#ffc54d', 'almost no move (daily candles have no wicks: one value per day)']);
+  if (n >= 3 && cs.slice(-3).every(up)) out.push(['Three green', '#2ee59d', 'three rising candles in a row']);
+  if (n >= 3 && cs.slice(-3).every(dn)) out.push(['Three red', '#ff5d73', 'three falling candles in a row']);
+  if (avgB && body(c) > avgB * 2) out.push([up(c) ? 'Strong green candle' : 'Strong red candle', up(c) ? '#2ee59d' : '#ff5d73', `body over 2× the recent average`]);
+  const prior = cs.slice(-11, -1); if (prior.length >= 5) { if (c.c > Math.max(...prior.map(x => x.h))) out.push(['Breakout · new 10-candle high', '#2ec5ff', 'closed above every recent high']); if (c.c < Math.min(...prior.map(x => x.l))) out.push(['Breakdown · new 10-candle low', '#ff5d73', 'closed below every recent low']); }
+  return out;
+}
+function cdlInfo(x){
+  const ch = x.c - x.o, r = (x.c/x.o - 1)*100;
+  return `<div><div class="k">OPEN</div><div class="v">${x.o.toFixed(2)}</div></div><div><div class="k">HIGH</div><div class="v">${x.h.toFixed(2)}</div></div><div><div class="k">LOW</div><div class="v">${x.l.toFixed(2)}</div></div><div><div class="k">CLOSE</div><div class="v ${cls(ch)}">${x.c.toFixed(2)}</div></div>
+    <div style="grid-column:1/-1;font-size:12px;color:var(--muted)">${x.k === x.k2 ? short(x.k) : short(x.k) + ' → ' + short(x.k2)} · <b class="${cls(ch)}">${ch >= 0 ? '▲' : '▼'} ${sgn(ch)}${Math.abs(ch).toFixed(2)} pts (${pctS(r)})</b></div>`;
+}
+function candleCard(ser){
+  const tf = UI.cdltf || 'W', N = tf === 'D' ? 30 : tf === 'W' ? 26 : 24, all = candles(ser, tf), cs = all.slice(-N);
+  const tabs = `<div class="fl">${[['D','Daily'],['W','Weekly'],['M','Monthly']].map(([k, l]) => `<button class="fc${tf === k ? ' on' : ''}" style="--c:#2ec5ff" data-act="cdltf" data-v="${k}">${l}</button>`).join('')}</div>`;
+  if (cs.length < 2) return `<section class="card cdl"><div class="ch"><h3>🕯️ ${IDX_NAME} candles</h3></div>${tabs}<div class="note">Not enough saved days for ${tf === 'D' ? 'daily' : tf === 'W' ? 'weekly' : 'monthly'} candles yet.</div></section>`;
+  UI.cdlData = cs;
+  const W = 340, H = 190, R = 36, top = 8, bot = H - 18, mn = Math.min(...cs.map(x => x.l)), mx = Math.max(...cs.map(x => x.h)), pad = (mx - mn) * .06 || 1, lo = mn - pad, hi = mx + pad;
+  const Y = v => top + (1 - (v - lo)/(hi - lo))*(bot - top), step = (W - R)/cs.length, bw = Math.max(3, step * .62), last = cs[cs.length - 1];
+  const ticks = [0, .25, .5, .75, 1].map(f => lo + (hi - lo) * f);
+  const g = cs.map((x, i) => { const cx = i*step + step/2, u = x.c >= x.o, col = u ? '#2ee59d' : '#ff5d73', y1 = Y(Math.max(x.o, x.c)), y2 = Y(Math.min(x.o, x.c)), bh = Math.max(1.6, y2 - y1);
+    return `<g data-act="cdl" data-i="${i}"><rect x="${(i*step).toFixed(1)}" y="${top}" width="${step.toFixed(1)}" height="${bot - top}" fill="transparent"/>
+      <line x1="${cx.toFixed(1)}" x2="${cx.toFixed(1)}" y1="${Y(x.h).toFixed(1)}" y2="${Y(x.l).toFixed(1)}" stroke="${col}" stroke-width="1.3"/>
+      <rect class="cb" style="animation-delay:${i*22}ms" x="${(cx - bw/2).toFixed(1)}" y="${y1.toFixed(1)}" width="${bw.toFixed(1)}" height="${bh.toFixed(1)}" rx="1.5" fill="${u ? col : col}" fill-opacity="${u ? .9 : .9}" stroke="${col}"/></g>`; }).join('');
+  const pats = cdlPatterns(all, tf);
+  return `<section class="card cdl"><div class="ch"><h3>🕯️ ${IDX_NAME} candles</h3><span class="small faint">tap a candle</span></div>${tabs}
+    <svg viewBox="0 0 ${W} ${H}">${ticks.map(v => `<line x1="0" x2="${W - R}" y1="${Y(v).toFixed(1)}" y2="${Y(v).toFixed(1)}" stroke="var(--line)" stroke-width="1"/><text x="${W - R + 4}" y="${(Y(v) + 3).toFixed(1)}" font-size="9" fill="var(--faint)">${v.toFixed(1)}</text>`).join('')}
+      <line x1="0" x2="${W - R}" y1="${Y(last.c).toFixed(1)}" y2="${Y(last.c).toFixed(1)}" stroke="#fff" stroke-dasharray="4 4" opacity=".5"/>
+      <rect x="${W - R + 1}" y="${(Y(last.c) - 7).toFixed(1)}" width="${R - 1}" height="14" rx="4" fill="${last.c >= last.o ? '#2ee59d' : '#ff5d73'}"/><text x="${W - R/2 + .5}" y="${(Y(last.c) + 3).toFixed(1)}" text-anchor="middle" font-size="9" font-weight="800" fill="#06111a">${last.c.toFixed(1)}</text>
+      ${g}<text x="0" y="${H - 4}" font-size="9.5" fill="var(--muted)">${short(cs[0].k)}</text><text x="${W - R}" y="${H - 4}" text-anchor="end" font-size="9.5" fill="var(--muted)">${short(last.k2)}</text></svg>
+    <div class="cdlinfo" id="cdlInfo">${cdlInfo(last)}</div>
+    <div class="small muted" style="margin-top:10px;font-weight:800;letter-spacing:.5px">PATTERN ON THE LATEST CANDLE</div>
+    <div class="pchips">${pats.length ? pats.map(([n, c, d]) => `<span style="--c:${c}" title="${esc(d)}">${n}</span>`).join('') : '<span style="--c:#646a9e">No textbook pattern</span>'}</div>
+    ${pats.length ? `<div class="note">${pats.map(([n, , d]) => `<b>${n}</b>: ${d}.`).join(' ')}</div>` : ''}
+    <div class="note">${tf === 'D' ? 'Daily candles open at the previous close and have no wicks, because MIB saves one value per day. Weekly and monthly candles show the real high and low. ' : ''}Patterns describe how your portfolio moved; as Bull or Bear's real data showed, they barely predict the next move.</div></section>`;
+}
+applyLook();
 
 /* ===================== actions ===================== */
 let tt, undoFn = null;
@@ -1522,7 +1723,7 @@ function importData(file){
       if (d.app !== 'MIB') throw 0;
       if (d.kind === 'backup') {
         const merge = (key, f = 'id') => { const have = new Set((S[key] || []).map(x => x[f])); let n = 0; (d[key] || []).forEach(x => { if (!have.has(x[f])) { S[key].push(x); n++; } }); return n; };
-        const n = merge('tx'); merge('divs'); merge('ideas'); merge('ipos'); merge('journal'); merge('accts'); S.wish = S.wish || []; merge('wish'); if (d.bkc && !Object.keys(S.bkc || {}).length) { S.bkc = d.bkc; applyColors(); }
+        const n = merge('tx'); merge('divs'); merge('ideas'); merge('ipos'); merge('journal'); merge('accts'); S.wish = S.wish || []; merge('wish'); if (d.bkc && !Object.keys(S.bkc || {}).length) { S.bkc = d.bkc; applyColors(); } if (d.look && !S.look) { S.look = d.look; applyLook(); }
         S.sectors = {...(d.sectors || {}), ...(S.sectors || {})}; Object.assign(S.prices, d.prices || {}); Object.entries(d.snaps || {}).forEach(([k,v]) => { if (!(k in S.snaps)) S.snaps[k] = v; }); if (!S.sheet && d.sheet) S.sheet = d.sheet;
         save(); closeSheet(); render(); return toast(`Backup merged · ${n} trades added`);
       }
@@ -1732,9 +1933,21 @@ const A = {
     S.lastBackup = Date.now(); save(); snd('chime'); toast('💾 Backup saved to Downloads'); if (!document.body.classList.contains('open')) render(false); },
   wipe: el => arm(el, () => { try { localStorage.removeItem(KEY); localStorage.removeItem(LKEY); } catch(e) {} S = fresh(); applyColors(); L = {pinHash:null, salt:null, cred:null, grace:1}; closeSheet(); unlocked = false; showLock('setup1'); }),
   close: () => closeSheet(),
+  look: () => { snd('tap'); sheetLook(); },
+  lkth: el => { look().theme = el.dataset.v; look().tile = ''; save(); applyLook(); snd('chime'); sheetLook(); },
+  lkshape: el => { const L = look(), k = el.dataset.k; L.btn[k] = L.btn[k] || {}; L.btn[k].s = el.dataset.v; save(); applyLook(); snd('tap'); sheetLook(); },
+  lkbr: el => { delete look().btn[el.dataset.k]; save(); applyLook(); snd('tap'); sheetLook(); },
+  lkall: el => { const L = look(); LBTNS.forEach(([k]) => { L.btn[k] = L.btn[k] || {}; L.btn[k].s = el.dataset.v; }); save(); applyLook(); snd('tap'); sheetLook(); },
+  lktile0: () => { look().tile = ''; save(); applyLook(); snd('tap'); sheetLook(); },
+  lkrbx: el => { look()[el.dataset.k] = el.dataset.v; save(); applyLook(); snd('tap'); sheetLook(); if (UI.tab === 'home') render(false); },
+  lkreset: el => arm(el, () => { S.look = null; save(); applyLook(); snd('tap'); sheetLook(); render(false); toast('Look reset'); }),
+  cdltf: el => { UI.cdltf = el.dataset.v; snd('tap'); render(false); },
+  cdl: el => { const i = +el.dataset.i, c = (UI.cdlData || [])[i]; if (!c) return; snd('tap'); document.querySelectorAll('.cdl g[data-act=cdl]').forEach(g => g.style.opacity = g === el ? '1' : '.55'); const box = $('cdlInfo'); if (box) box.innerHTML = cdlInfo(c); },
+  ntlp: el => { UI.ntlp = el.dataset.v; snd('tap'); render(false); },
 };
 document.addEventListener('click', e => { const el = e.target.closest('[data-act]'); if (!el || ($('app').hidden && !el.closest('.sheet'))) return; const f = A[el.dataset.act]; if (f) f(el, e); });
 document.addEventListener('input', e => {
+  if (e.target.dataset && e.target.dataset.lk) { lookInput(e.target); return; }
   if (e.target.id === 'jSym') { const k = symKey(e.target.value), c = k ? cmpOf(k) : null, p = $('jPx'); if (p && (!p.value || p.dataset.auto)) { p.value = c != null ? c : ''; p.dataset.auto = '1'; } }
   if (e.target.id === 'jPx') delete e.target.dataset.auto;
   if (e.target.dataset && e.target.dataset.ck && UI.C) { UI.C[e.target.dataset.ck][e.target.dataset.id] = e.target.value; const pv = e.target.previousElementSibling; if (pv) pv.style.setProperty('--c', e.target.value); }
